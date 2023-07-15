@@ -4,9 +4,113 @@
 LiraFlix
 {% endblock %}
 {% block content %}
-<div align="center">
-    <h1>
-        Essa é minha homepage cu
-    </h1>
-</div>
+
+{% load static %}
+   <header class="min-h-screen bg-black bg-opacity-75 bg-blend-overlay showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat"  style="background-image: url('{% static  'images/bgliraflix2.png' %}');">
+        <div class="z-30 h-full py-32 md:py-0 text-gray-100 text-center flex items-center flex-col">
+
+            <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center">
+                Todos os meus trabalhos catalogados em um só lugar
+            </h1>
+            <h3 class="text-xl md:text-xl py-5">
+                Veja meus trabalhos e historias !
+            </h3>
+            <h4 class="text-sm md:text-lg pb-3">
+                Quer ter um atendimento especializado e fazer um trabalho ?
+
+            </h4>
+            <h4 class="text-sm md:text-lg pb-3">
+                Coloque seu numero de WhatsApp aqui e receba uma promoção
+            </h4>
+            <div class="w-full flex justify-center pb-5">
+                <div class="flex justify-center items-center w-11/12 md:w-10/12 ">
+                    <form method="post" class="w-6/12 justify-center">
+                        <div class="flex flex-grow items-stretch justify-center">
+                            <input class="h-9 w-60 px-3" placeholder="Digite aqui seu numero">
+                        <button class="h-9 bg-red-600 font-medium md:font-normal flex justify-center items-center py-2 px-3 md:px-0 rounded-br-sm rounded-tr-sm md:text-1xl" type="submit">
+                            <span>
+                                Acessar
+                            </span>
+                            <ion-icon name="arrow-forward-outline" class="text-1xl"></ion-icon>
+                        </button>
+                        </div>
+                    </form>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8 bg-gradient-to-r from-black to-red-600' style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10 ">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Entenda a magia do meu trabalho
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Desde coberturas grandes a trabalhos limpos, existe todo um planejamento para o desenvolvimento de um trabalho
+                e escolha certa do material para a execução
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static 'images/tatuador.png' %}" class="w-8/12" alt="">
+        </div>
+    </section>
+
+    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8 bg-gradient-to-l from-black to-red-600' style="min-height: 70vh;">
+        <div class='md:w-1/2 flex justify-center items-center '>
+            <img src="{% static 'images/xx.png'%}" class="w-6/12" alt="">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Trabalhos limpos
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Veja catalogado todos os meus trabalhos limpos e coberturas, veja tanto os videos quanto as historias sobre
+                a produção e referencias do trabalho
+            </h5>
+        </div>
+
+    </section>
+
+    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-6 bg-gradient-to-r from-black to-red-600' style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Sobre o site
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Feito para criar uma intimidade maior com meu publico além de tudo você ganham um desconto caso
+                coloque seu numero, você ira receber uma menssagem automatica no WhatsApp para confirmar seu desconto !
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static 'images/discount.png' %}" class="w-7/12" alt="">
+        </div>
+    </section>
+    <footer class="px-5 py-10 flex justify-between bg-gradient-to-b from-black to-gray-900">
+    <div class="flex flex-col justify-start px-2">
+        <ul class="space-y-2">
+            <li>&copy; 2023</li>
+            <li>&copy; RL</li>
+        </ul>
+    </div>
+    <div class="flex flex-col justify-center ">
+        <div style="margin-left: 90px;">
+            <ul class="space-y-2 flex flex-col items-center">
+
+            <li>Feito com Python (Django)</li>
+            <li >Por Raphael Lira</li>
+        </ul>
+        </div>
+    </div>
+    <div class="flex flex-col justify-end">
+        <ul class="space-y-2">
+            <li> Numero (071)99645-7785</li>
+            <li>raphaellirapk@gmail.com</li>
+            <li>Salvador-BA</li>
+        </ul>
+    </div>
+    </footer>
+
 {% endblock %}
