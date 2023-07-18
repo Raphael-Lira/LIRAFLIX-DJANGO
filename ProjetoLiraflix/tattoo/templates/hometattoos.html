@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+LiraFlix Home
+{% endblock %}
+{% block content %}
+
+  {% for tattoo in lista_trabalhos %}
+    {% if forloop.first %}
+    <div class="fixed">
+      <img src="{{ tattoo.thumb.url }}">
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
