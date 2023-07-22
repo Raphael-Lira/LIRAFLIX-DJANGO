@@ -4,12 +4,15 @@
 LiraFlix Home
 {% endblock %}
 {% block content %}
-
+<div class="py-20">
+  <hr>
+</div>
   {% for tattoo in lista_trabalhos %}
-    {% if forloop.first %}
-    <div class="fixed">
+    <div>
+      <a href="{% url 'tattoo:detalheview' tattoo.pk%}">
+      <h1> {{ tattoo }}</h1>
+      </a>
       <img src="{{ tattoo.thumb.url }}">
     </div>
-    {% endif %}
   {% endfor %}
 {% endblock %}
