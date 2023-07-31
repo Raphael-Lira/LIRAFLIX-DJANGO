@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Tattoo
+from .models import Tattoo, Episodio
 from trabalhos.models import Trabalho
 from django.views.generic import TemplateView, ListView, DetailView
 

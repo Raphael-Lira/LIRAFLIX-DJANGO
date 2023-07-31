@@ -10,4 +10,14 @@ Detalhes
         </h1>
             <img class="h-auto max-w-sm rounded-lg shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30" src="{{ object.thumb.url }}">
     </div>
+    <div class="flex items-center flex-col ">
+        <h2 class="py-10"> Episódios </h2>
+        {% for episodio in object.episodios.all %}
+            <a href="{{ episodio.link }}">
+
+                <p>Episodio {{ forloop.counter }} : {{ episodio }} </p>
+            </a>
+        {% endfor %}
+    </div>
+
 {% endblock %}
